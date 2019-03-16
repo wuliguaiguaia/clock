@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>css3</title>
+    <style>#clock {
+            width: 30em;
+            height: 30em;
+            background: #fff url("bg.c5f0adfe.jpg");
+            background-size: cover;
+            position: relative;
+        }
+
+        #clock:after {
+            content: "";
+            width: 15px;
+            height: 15px;
+            background-color: #fff;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border-radius: 50%;
+        }
+
+        #clock .hour-container,
+        #clock .minute-container,
+        #clock .second-container {
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+        }
+
+        #clock .hour {
+            width: 5px;
+            height: 25%;
+            background-color: red;
+            position: absolute;
+            left: 49.3%;
+            top: 30%;
+        }
+
+        #clock .minute {
+            width: 3px;
+            height: 40%;
+            background-color: blue;
+            position: absolute;
+            left: 49.6%;
+            top: 15%;
+        }
+
+        #clock .second {
+            width: 2px;
+            height: 53%;
+            background-color: green;
+            position: absolute;
+            left: 49.6%;
+            top: 2%;
+        }
+        .hour-container {animation: rotate 43200s infinite linear;}
+        .minute-container {animation: rotate 3600s infinite steps(60);}
+        .second-container {animation: rotate 60s infinite steps(60);}
+        @keyframes rotate {
+            100% {
+                transform: rotateZ(360deg);
+            }
+        }</style>
+</head>
+
+<body>
+    <div id="clock">
+        <div class="container">
+            <div class="hour-container">
+                <div class="hour"></div>
+            </div>
+            <div class="minute-container">
+                <div class="minute"></div>
+            </div>
+            <div class="second-container">
+                <div class="second"></div>
+            </div>
+        </div>
+    </div>
+    <script src="/main.1f19ae8e.js"></script>
+</body>
+
+</html>

@@ -88,7 +88,7 @@ class Clock {
             ctx.fillStyle = fillColor;
             ctx.fill();
         } else {
-            ctx.lineWidth = 5;
+            ctx.lineWidth = 2;
             ctx.strokeStyle = 'yellow';
             ctx.stroke();
         }

@@ -1,4 +1,7 @@
-[canvas-clock](https://wuliguaiguaia.github.io/clock/canvas/dist)
+[canvas-clock](https://wuliguaiguaia.github.io/clock/canvas-clock/)
+
+[css3-notime](https://wuliguaiguaia.github.io/clock/css3-notime/)
+
 [canvas文档](https://developer.mozilla.org/zh-CN/docs/Web/API/Canvas_API/Tutorial)
 
 - 绘制矩形
